@@ -1,0 +1,183 @@
+.app-header{
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    height:72px;
+    justify-content: space-between;
+    border-bottom: 1px solid #D7DFE9;
+}
+.profile{
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.logo{
+     margin-left: 15px;
+}
+.input-bar{
+	border: none;
+	border:solid 1px #ccc;
+  border-radius: 5px;
+	width: 648px;
+	height: 40px;
+  padding-left:40px
+}
+  ul.nav {
+    width: 60%;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #39A2DB;
+    height:40px;
+    padding-left: 0px;
+    background-color: #D7DFE9;
+    color: #171F46;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+  ul.nav li {
+    width: 50%;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.7s;
+    color: #171F46;
+  }
+  ul.nav li:nth-child(3) {
+    border-radius: 0;
+  }
+  ul.nav li:nth-child(2) {
+    border-right: 1px solid #39A2DB;
+    border-left: 1px solid #39A2DB;
+  }
+  ul.nav li:hover {
+    background: rgba(50, 224, 196, 0.15);
+  }
+  ul.nav li.active {
+    background: #0B69FF;
+    color: #FFFFFF;
+    height: 22px;
+  }
+.FirstTab p,
+.SecondTab p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 360px;
+  margin: 30px;
+  padding-bottom: 10px;
+  height: 192px;
+  /* text-align: center; */
+  font-family: arial;
+}
+
+.innerpara{
+  position: relative;
+  top: 40px;
+  left: 24px;
+  width:312px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cardcontainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.spantitle{
+  position: relative;
+  bottom: 28px;
+  left: 16px;
+  font-family: 'HK Grotesk';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+color: #171F46
+}
+
+.img-container{
+  position: relative;
+  left: 24px;
+  top: 24px;
+}
+.catagory{
+  position: relative;
+  left: 48px;
+  font-family: 'HK Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7E858E;
+}
+.linkdiv{
+  position: relative;
+  top:40px;
+  left: 24px;
+}
+.link{
+  text-decoration: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
