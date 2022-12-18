@@ -11,15 +11,15 @@
     margin-right: 20px;
 }
 .logo{
-     margin-left: 15px;
+    margin-left: 15px;
 }
 .input-bar{
 	border: none;
 	border:solid 1px #ccc;
   border-radius: 5px;
-	width: 648px;
+	width: 500px;
 	height: 40px;
-  padding-left:40px
+  padding-left:40px;
 }
   ul.nav {
     width: 60%;
@@ -181,3 +181,83 @@ color: #171F46
 }
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
+
+.logo {
+  border-radius: 50%;
+}
+
+.button{
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+padding: 4px 10px;
+background: #2DCA73;
+border-radius: 4px;
+color: white;
+margin-right: 30px;
+border: 2px solid white;
+cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  padding-left: 200px;
+  background: #FBFBFB;
+}
+
+.form{
+  width: 50%;
+  padding-top: 120px;
+}
+
+.itemname{
+  width:320px;
+  height:40px;
+  border: none;
+	border:solid 1px #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.label{
+  font-family: 'HK Grotesk';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+color: #7E858E;
+}
+
+.Heading{
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #171F46;
+margin: 20px 0px 20px 80px;
+}
+
+.createbutton{
+  width: 93px;
+height: 40px;
+left: 310px;
+top: 775px;
+background: #0B69FF;
+border-radius: 4px;
+border: 2px solid #0B69FF;
+color: #FBFBFB;
+margin-left: 120px;
+}
+
+.previous {
+  color: black;
+  text-decoration: none;
+}

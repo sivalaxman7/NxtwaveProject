@@ -3,7 +3,7 @@ import FirstTab from "./AllTabs/FirstTab";
 import "../styles.css"
 
  
-const Tabs = ({post,currentRequestPosts,currrentUserPosts,paginate,postsPerPage,currentPage}) => {
+const Tabs = ({filteredPosts,currentRequestPosts,currrentUserPosts,paginate,postsPerPage,currentPage,setSearchValue}) => {
   const [activeTab, setActiveTab] = useState("tab1");
   const handleTab1 = () => {
     setActiveTab("tab1");
@@ -37,7 +37,7 @@ const Tabs = ({post,currentRequestPosts,currrentUserPosts,paginate,postsPerPage,
         </li>
       </ul>
       <div className="outlet">
-        {activeTab === "tab1" ? <FirstTab post={post} paginate={paginate} postsPerPage={postsPerPage} currentPage={currentPage}/> :activeTab==="tab2"? <FirstTab post={currentRequestPosts} paginate={paginate} postsPerPage={postsPerPage} currentPage={currentPage || 1}/>:<FirstTab post={currrentUserPosts} paginate={paginate} postsPerPage={postsPerPage} currentPage={currentPage || 1}/>}
+        {activeTab === "tab1" ? <FirstTab post={filteredPosts} setSearchValue={setSearchValue} paginate={paginate} postsPerPage={postsPerPage} currentPage={currentPage}/> :activeTab==="tab2"? <FirstTab setSearchValue={setSearchValue} post={currentRequestPosts} paginate={paginate} postsPerPage={postsPerPage} currentPage={currentPage || 1}/>:<FirstTab setSearchValue={setSearchValue} post={currrentUserPosts} paginate={paginate} postsPerPage={postsPerPage} currentPage={currentPage || 1}/>}
       </div>
     </>
   );

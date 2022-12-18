@@ -3,14 +3,14 @@ import SeachBox from "../../Components/SearchBox"
 import Card from '../Card'
 import Pagination from '../pagination';
 
-const FirstTab = ({post,postsPerPage,paginate,currentPage}) => {
+const FirstTab = ({post,postsPerPage,paginate,currentPage,setSearchValue}) => {
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = post?.slice(indexOfFirstPost, indexOfLastPost);
   return (
   <>
   <div style={{marginLeft:"100px"}}>
-  <SeachBox/>
+  <SeachBox setSearchValue={setSearchValue}/>
   </div>
     <div className='cardcontainer'>
     {currentPosts.map((p)=>(<Card p={p} />))}

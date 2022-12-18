@@ -8,7 +8,7 @@ const SearchBox = (props) => {
 			<input className='input-bar'
 				value={props.value}
 				onChange={(event) => props.setSearchValue(event.target.value)}
-				placeholder="Search"
+				placeholder="Search by Title"
 			/>
 		</div>
 	);
